@@ -7,8 +7,6 @@ A lightweight desktop application for converting documents between multiple form
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
 
 ## ✨ Features
-
-- **Drag & Drop**: Simply drop your file into the app
 - **Multi-Format**: Convert between PDF, DOCX, Markdown, HTML, EPUB, and more
 - **Auto-Detection**: Automatically detects input file format
 - **Smart Conversion**: Shows only compatible output formats
