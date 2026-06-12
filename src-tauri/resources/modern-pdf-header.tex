@@ -1,0 +1,44 @@
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{bookmark}
+
+% Edit these colors to change the overall document look.
+\definecolor{BrandPrimary}{HTML}{12324A}
+\definecolor{BrandAccent}{HTML}{0F766E}
+\definecolor{BrandText}{HTML}{1F2937}
+\definecolor{BrandMuted}{HTML}{667085}
+\definecolor{BrandRule}{HTML}{D7DEE7}
+
+\AtBeginDocument{\color{BrandText}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlist{itemsep=0.3em, topsep=0.45em, parsep=0em, partopsep=0em}
+\renewcommand{\labelitemi}{\textcolor{BrandAccent}{\small\textbullet}}
+
+\titleformat{\section}{\Large\sffamily\bfseries\color{BrandPrimary}}{\thesection}{0.75em}{}
+\titleformat{\subsection}{\large\sffamily\bfseries\color{BrandAccent}}{\thesubsection}{0.75em}{}
+\titleformat{\subsubsection}{\normalsize\sffamily\bfseries\color{BrandPrimary}}{\thesubsubsection}{0.75em}{}
+
+\titlespacing*{\section}{0pt}{1.6em}{0.55em}
+\titlespacing*{\subsection}{0pt}{1.2em}{0.45em}
+\titlespacing*{\subsubsection}{0pt}{1em}{0.35em}
+
+\captionsetup{labelfont={bf,sf,color=BrandPrimary}, textfont={small}}
+\hypersetup{colorlinks=true, linkcolor=BrandAccent, urlcolor=BrandAccent, citecolor=BrandAccent}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\textcolor{BrandMuted}{\nouppercase{\leftmark}}}
+\fancyhead[R]{\sffamily\small\textcolor{BrandMuted}{\thepage\ / \pageref*{LastPage}}}
+\fancyfoot[C]{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\makeatletter
+\renewcommand{\headrule}{\hbox to\headwidth{\color{BrandRule}\leaders\hrule height \headrulewidth\hfill}}
+\makeatother

@@ -1,0 +1,39 @@
+---
+# Pandoc defaults for a clean, modern PDF export.
+#
+# Customize here first:
+# - margins: edit the geometry values below
+# - typography: edit mainfont, sansfont, monofont, fontsize, linestretch
+# - colors and heading styling: edit docs/pandoc/modern-pdf-header.tex
+
+from: markdown+yaml_metadata_block+implicit_figures
+to: pdf
+pdf-engine: xelatex
+standalone: true
+number-sections: false
+toc: false
+wrap: preserve
+
+resource-path:
+  - .
+
+variables:
+  documentclass: article
+  classoption:
+    - oneside
+  papersize: a4
+  fontsize: 11pt
+  linestretch: 1.15
+  geometry:
+    - top=24mm
+    - bottom=26mm
+    - left=24mm
+    - right=24mm
+  mainfont: Georgia
+  sansfont: Segoe UI
+  monofont: Consolas
+  colorlinks: true
+  linkcolor: teal
+  urlcolor: teal
+  citecolor: teal
+...

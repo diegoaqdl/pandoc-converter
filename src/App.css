@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  margin: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modern-shadow {
+  box-shadow:
+    0 1px 3px 0 rgb(15 23 42 / 0.08),
+    0 1px 2px -1px rgb(15 23 42 / 0.08);
+}
+
+.modern-shadow-lg {
+  box-shadow:
+    0 10px 15px -3px rgb(15 23 42 / 0.12),
+    0 4px 6px -4px rgb(15 23 42 / 0.12);
+}
+
+.modern-shadow-xl {
+  box-shadow:
+    0 24px 48px -16px rgb(15 23 42 / 0.18),
+    0 12px 24px -18px rgb(15 23 42 / 0.18);
+}
+
+.smooth-transition {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+}
+
+.app-background {
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.16), transparent 28rem),
+    radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.12), transparent 24rem),
+    linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.document-pattern {
+  background:
+    radial-gradient(circle at 16% 22%, rgba(99, 102, 241, 0.12) 0, rgba(99, 102, 241, 0.12) 10px, transparent 10px),
+    radial-gradient(circle at 84% 26%, rgba(14, 165, 233, 0.09) 0, rgba(14, 165, 233, 0.09) 8px, transparent 8px),
+    linear-gradient(135deg, transparent 0 74%, rgba(99, 102, 241, 0.07) 74% 78%, transparent 78% 100%),
+    linear-gradient(45deg, transparent 0 18%, rgba(168, 85, 247, 0.06) 18% 22%, transparent 22% 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.94));
+}
